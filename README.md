@@ -1,4 +1,4 @@
-Transformers for RL
+## Transformers for RL
 
 Exploring whether Transformers' temporal memory gives them an advantage over memoryless policies in online RL, under both full and partial observability, using TD3 on Hopper-v5.
 
