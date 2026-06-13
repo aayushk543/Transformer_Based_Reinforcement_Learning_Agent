@@ -97,10 +97,10 @@ class TransformerTD3Agent:
         for i in range(batch_size):
             # Create windows (simplified - in practice, need full trajectory buffer)
             # For now, just replicate observations to fill window
-            obs_window = obs[i:i+1].repeat(self.window_size, 0)
-            next_obs_window = next_obs[i:i+1].repeat(self.window_size, 0)
-            action_window = actions[i:i+1].repeat(self.window_size - 1, 0)
-            next_action_window = actions[i:i+1].repeat(self.window_size - 1, 0)
+            obs_window = obs[i:i+1].repeat(self.window_size, 1)
+            next_obs_window = next_obs[i:i+1].repeat(self.window_size, 1)
+            action_window = actions[i:i+1].repeat(self.window_size - 1, 1)
+            next_action_window = actions[i:i+1].repeat(self.window_size - 1, 1)
             
             obs_windows.append(obs_window)
             next_obs_windows.append(next_obs_window)
