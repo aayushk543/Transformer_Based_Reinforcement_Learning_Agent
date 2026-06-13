@@ -1,4 +1,4 @@
-# SAiDL Summer Assignment 2026: Transformers for RL
+Transformers for RL
 
 Exploring whether Transformers' temporal memory gives them an advantage over memoryless policies in online RL, under both full and partial observability, using TD3 on Hopper-v5.
 
@@ -19,11 +19,7 @@ SAiDL-Summer-Assignment-2026/
 │   ├── transformer_actor.py  # Transformer actor & critic architectures
 │   └── utils.py              # Utilities: normalization, buffers, eval
 ├── checkpoints/              # Trained models & results
-├── core-ml.ipynb
-├── sparsity-optimization.ipynb
-├── SAiDL_CoreML(2).pdf
-├── SAiDL_Sparsity_Optimization(1).pdf
-└── SAiDL_Summer_Assignment_2026.pdf
+
 ```
 
 ---
@@ -104,7 +100,7 @@ Tests L ∈ {4, 8, 16, 32} over 3 seeds each. Results saved to `checkpoints/tran
 
 ## Configuration
 
-**Default hyperparameters** (from assignment):
+**Hyperparameters** :
 ```python
 # TD3
 actor_lr = 3e-4
@@ -136,21 +132,11 @@ Results are saved in JSON format with structure:
 }
 ```
 
-Summary plots and analysis to come as experiments complete.
 
----
-
-## Bonus Experiments (Planned)
-
-- [ ] Positional encoding ablation (learned vs. sinusoidal vs. RoPE)
-- [ ] Combined POMDP (hidden velocities + noise + delayed rewards)
-- [ ] In-context RL via algorithm distillation
-- [ ] xLSTM as policy backbone (Beck et al., 2024)
 
 ---
 
 ## Author
 
 **Aayush Kushwaha**  
-2024A7PS0524G  
-SAiDL Summer 2026
+
